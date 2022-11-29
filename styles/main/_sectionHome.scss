@@ -1,0 +1,15 @@
+$maven-font: 'Maven Pro', sans-serif;
+
+.section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__p{
+        text-align: center;
+        font-family: $maven-font;
+    }  
+}
+
+.section-container--disabled{
+    display: none;
+}
