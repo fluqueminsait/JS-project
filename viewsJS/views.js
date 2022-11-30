@@ -20,12 +20,14 @@ btnPrev.addEventListener('click', prevPage)
 
 async function nextPage() {
   page++;
+  if (page > 57){ alert("Esta es la ultima pagina")}
   const nextPage = await getPokemons(page)
   paintPokemons(nextPage)
 }
 
 async function prevPage() {
   page--;
+  if (page <= 1 ){ alert("La siguiente es la primera pagina")}
   const prevPage = await getPokemons(page)
   paintPokemons(prevPage)
 }
