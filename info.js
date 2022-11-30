@@ -1,8 +1,14 @@
-const getDogs = async () =>{
-    const dogsAPI = await fetch ('https://back-pets-frandl92.vercel.app/pets')
-    const dogsJSON = await dogsAPI.json();
-    const dogsArray = await dogsJSON.Perrekes
-    return dogsArray
-}
+const getPokemons = async () => {
 
-export {getDogs}
+    const pokemons= []
+    for (let i = 1; i < 152; i++) {
+  
+    const pokemonsResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
+    const pokemonsJson = await pokemonsResponse.json();
+    pokemons.push(pokemonsJson);
+    
+    }
+    return pokemons;
+  }
+
+export {getPokemons}
