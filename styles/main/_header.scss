@@ -4,10 +4,13 @@ $secular-font: 'Secular One', sans-serif;
     display: flex;
     gap: 20px;
     justify-content: space-around;
+    background-color: #FCDDB0;
+    margin: 0px;
+    padding: 0px;
 
     &__img{
-        width: 200px;
-        height: 100px;
+        width: 120px;
+        height: 70px;
     }
 
     &__nav{
@@ -16,7 +19,7 @@ $secular-font: 'Secular One', sans-serif;
         align-items: center;
 
         &__p{
-            font-size: 30px;
+            font-size: 25px;
             cursor: pointer;
             font-family: $secular-font;
         }

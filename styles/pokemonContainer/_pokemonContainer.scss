@@ -1,8 +1,14 @@
 .pokemons-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     gap: 10px;
+    margin-top: 10px;
+
+    &__cardContainer{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .pokemons-container--notShow {

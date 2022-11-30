@@ -1,5 +1,6 @@
-import {paintPokemons, showHome} from "./viewsJS/views.js";
-import { showListPokemons } from "./helpers/helpers.js";
+import { showHome, welcomeMessage, showListPokemons} from "./viewsJS/views.js";
+
+
 
 const showPokemons = document.getElementsByClassName("pokemons");
 for (const showpoke of showPokemons) {
@@ -11,7 +12,8 @@ for (const iterator of home) {
     iterator.addEventListener("click", () => showHome())
 }
 
-paintPokemons()
+
+// welcomeMessage()
 
 
 
