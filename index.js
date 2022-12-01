@@ -1,5 +1,5 @@
 import { showHome, welcomeMessage, showListPokemons} from "./viewsJS/views.js";
-
+import { footerArray } from "./viewsJS/footer.js";
 
 
 const showPokemons = document.getElementsByClassName("pokemons");
@@ -13,7 +13,7 @@ for (const iterator of home) {
 }
 
 
-// welcomeMessage()
+welcomeMessage()
 
 
 
